@@ -4,7 +4,9 @@ Para adicionar um botão na interface para gerar o QR Code dinamicamente. Use a 
 
 📌 Instale a biblioteca
 --------------------------------------------------------------------------------------------------------------------
+
 npm install qrcode.react
+
 --------------------------------------------------------------------------------------------------------------------
 
 📌 Adicione este código na sua tela
