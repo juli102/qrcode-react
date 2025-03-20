@@ -5,21 +5,23 @@ Para adicionar um botão na interface para gerar o QR Code dinamicamente. Use a 
 📌 Instale a biblioteca
 --------------------------------------------------------------------------------------------------------------------
 
-npm install qrcode.react
+        npm install qrcode.react
 
 --------------------------------------------------------------------------------------------------------------------
 
 📌 Adicione este código na sua tela
 --------------------------------------------------------------------------------------------------------------------
 
-import QRCode from "qrcode.react";
+    import QRCode from "qrcode.react";
 
-const appUrl = "https://seu-dominio.com/boleto-pay"; // Substitua pela URL correta
-
+     const appUrl = "https://seu-dominio.com/boleto-pay"; // Substitua pela URL correta
+     
+      return(
        <Box mt="md" style={{ textAlign: "center" }}>
          <Text size="sm">Escaneie este QR Code no celular para abrir a câmera</Text>
           <QRCode value={appUrl} size={200} />
        </Box>
+       )
 -------------------------------------------------------------------------------------------------------------------
        
 ****** Dica: Se estiver testando localmente, troque "https://seu-dominio.com" por "http://seu-ip-local:3000" para acessar pelo celular na mesma rede.
